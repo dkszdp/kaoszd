@@ -140,6 +140,7 @@ button:hover {
         margin-left: 60px;
         text-align: center;
         margin-top: 160px;
+        margin-bottom: 160px;
         padding: 10px;
     }
 
@@ -196,10 +197,11 @@ button:hover {
         background-color: var(--main-Black);
         color: var(--main-White);
         border-radius: 15px;
-        margin-right: 700px;
-        margin-left: 700px;
+        margin-right: 450px;
+        margin-left: 450px;
         text-align: center;
         margin-top: 100px;
+        margin-bottom: 100px;
         padding: 10px;
     }
 }
