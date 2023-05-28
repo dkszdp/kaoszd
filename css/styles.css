@@ -1,7 +1,7 @@
 :root {
-    --main-Black: #202020;
-    --main-Grey: #4C4C4C;
-    --main-White: #F4F4F4;
+    --mainBlack: #202020;
+    --mainGrey: #4C4C4C;
+    --mainWhite: #F4F4F4;
 }
 
 body {
@@ -9,203 +9,32 @@ body {
     font-family: 'Space Mono', monospace !important;
     background-size: cover;
 }
-
-h2 {
-    font-size: xx-large;
-}
-
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: var(--mainGrey) !important;
 }
-
 img {
     padding-top: 20px;
-    height: 120px;
-    width: 120px;
+    height: 125px;
 }
-
 button {
     font-family: 'Space Mono', monospace !important;
     transition: transform 0.2s ease-in-out;
-    border: 2px solid var(--main-White);
+    border: 2px solid var(--mainWhite);
     background-color: transparent;
-    color: var(--main-White);
+    color: var(--mainWhite);
     font-size: large;
     margin-bottom: 10px;
-    height: 50px;
-    width: 200px;
+    height: 40px;
+    width: 180px;
 }
-
 button:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
-
-.contenedorPrincipal {
+.linksContainer {
     border: 5px solid linear-gradient(90deg, rgba(76,76,76,1) 10%, rgba(244,244,244,1) 100%);
-    background-color: var(--main-Black);
-    color: var(--main-White);
-    border-radius: 15px;
-    margin-right: 700px;
-    margin-left: 700px;
-    text-align: center;
-    margin-top: 100px;
-    padding: 10px;
-}
-
-
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #202020;
-    transition: opacity 0.75s, visibility 0.75s;
-}
-
-.loader--hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: var(--main-red);
-    border-radius: 50%;
-    animation: loading 0.75s ease infinite;
-}
-
-@keyframes loading {
-    from {
-        transform: rotate(0turn)
-    }
-
-    to {
-        transform: rotate(1turn)
-    }
-}
-
-
-
-
-/*--Media Queries--*/
-@media (min-width:320px) { /*Móviles de 480x320px*/
-    body {
-        background-attachment: fixed;
-    }
-
-    h2 {
-        font-size: x-large;
-    }
-
-    p {
-        font-size: smaller;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    img {
-        padding-top: 20px;
-        height: 70px;
-        width: 70px;
-    }
-    
-    button {
-        font-family: 'Space Mono', monospace !important;
-        transition: transform 0.2s ease-in-out;
-        border: 2px solid var(--main-White);
-        background-color: transparent;
-        color: var(--main-White);
-        font-size: medium;
-        margin-bottom: 10px;
-        height: 30px;
-        width: 120px;
-    }
-
-    .contenedorPrincipal {
-        border: 5px solid linear-gradient(90deg, rgba(76,76,76,1) 10%, rgba(244,244,244,1) 100%);
-        background-color: var(--main-Black);
-        color: var(--main-White);
-        border-radius: 15px;
-        margin-right: 60px;
-        margin-left: 60px;
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        padding: 10px;
-    }
-
-    .contenedorDeLinks {
-        text-align: center;
-    }
-
-
-    .loader::after {
-        content: "";
-        width: 55px;
-        height: 55px;
-        border: 10px solid #dddddd;
-        border-top-color: var(--main-Grey);
-        border-radius: 50%;
-        animation: loading 0.75s ease infinite;
-    }
-}
-
-@media (min-width:1025px) { /*Para tablets grandes apaisado, portátiles y ordenadores de escritorio*/    
-    h2 {
-        font-size: xx-large;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-
-    p {
-        font-size: larger;
-    }
-    
-    img {
-        padding-top: 20px;
-        height: 120px;
-        width: 120px;
-    }
-    
-    button {
-        font-family: 'Space Mono', monospace !important;
-        transition: transform 0.2s ease-in-out;
-        border: 2px solid var(--main-White);
-        background-color: transparent;
-        color: var(--main-White);
-        font-size: large;
-        margin-bottom: 10px;
-        height: 50px;
-        width: 200px;
-    }
-    
-    button:hover {
-        transform: scale(1.1);
-        cursor: pointer;
-    }
-    
-    .contenedorPrincipal {
-        border: 5px solid linear-gradient(90deg, rgba(76,76,76,1) 10%, rgba(244,244,244,1) 100%);
-        background-color: var(--main-Black);
-        color: var(--main-White);
-        border-radius: 15px;
-        margin-right: 450px;
-        margin-left: 450px;
-        text-align: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        padding: 10px;
-    }
+    background-color: var(--mainBlack);
+    border-radius: 10px;
+    padding: 25px;
 }
